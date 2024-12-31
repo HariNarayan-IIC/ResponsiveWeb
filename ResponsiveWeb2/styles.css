@@ -1,0 +1,13 @@
+.banner {
+    height: 150px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+}
+
