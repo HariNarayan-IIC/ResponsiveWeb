@@ -1,13 +1,75 @@
-.banner {
-    height: 150px;
-    margin: 0px;
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    font-family: sans-serif;
 }
+
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    color: #312614;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1 span {
+    color: #B7832F;
+}
+
+p {
+    margin-top: 0px;
+}
+
+/* Layout */
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
-.flex-container {
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.column-container {
     display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
+
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+
+@media (max-width: 600px) {
+    .column-container {
+        flex-direction: column;
+    }
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}
+
+.note {
+    background: #312614;
+    color: #fff;
+    padding: 1em;
+}
